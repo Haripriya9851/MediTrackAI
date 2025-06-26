@@ -1,15 +1,11 @@
 ---
 license: mit
 title: Pharmacy Assistant
-sdk: gradio
-emoji: 🚀
-colorFrom: green
-colorTo: purple
 short_description: Gemini Pharmacy Assistant with Gemini Vision + LangGraph
 ---
 # Handwritten Prescription Reading with Gemini Vision + LangGraph
 
-A Gradio application that uses Gemini Vision and LangChain agents to extract and process handwritten prescriptions.
+A Gradio application that uses Gemini Vision and LangGraph agents to extract and process handwritten prescriptions.
 
 
 Pipeline Process:
