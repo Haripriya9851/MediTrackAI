@@ -1,35 +1,55 @@
-# PharmAssist
+---
+license: mit
+title: Pharmacy Assistant
+sdk: gradio
+emoji: 🚀
+colorFrom: green
+colorTo: purple
+short_description: Gemini Pharmacy Assistant with Gemini Vision + LangGraph
+---
+# Handwritten Prescription Reading with Gemini Vision + LangGraph
+
+A Gradio application that uses Gemini Vision and LangChain agents to extract and process handwritten prescriptions.
 
 ## Features
-**Better Prescription Understanding:** Accurate transcript reading,for dosage, quantity, days extraction with Gemini LLM
 
-**High Reasoning:** Used Chain-of-Thought prompt engineering technique to clean, organize and extract data in structured JSON format.
-
-**Prescription style variability:** Handled via repeated testing and fine-tuning prompts.
-
-**Dynamic SQL Query Generation :** Used Langchain Tool calling to communicate and update SQLLite DB
+- **Vision Processing**: Uses Gemini 1.5 Flash to extract prescription data from images
+- **Agent-based Processing**: LangChain agents with tool calling for database operations
+- **Database Integration**: SQLite database for pharmacy inventory management
+- **Real-time Stock Checking**: Automatic inventory verification and updates
 
 ## Setup
 
-Install dependencies:
-```pip install -r requirements.txt```
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-Set up environment variables:
-```export GOOGLE_API_KEY="your_api_key_here" ```
+2. Set up environment variables:
+```bash
+export GOOGLE_API_KEY="your_api_key_here"
+```
 
-Run the application:
-```python app.py```
+3. Run the application:
+```bash
+python app.py
+```
 
-Deployment
+## Deployment
+
 To deploy to Hugging Face Spaces:
-```gradio deploy```
+```bash
+gradio deploy
+```
 
 ## Usage
 
-**Upload a handwritten prescription image and the system will:**
+Upload a handwritten prescription image and the system will:
+1. Extract medicine details using vision AI
+2. Calculate required quantities 
+3. Check database availability 
+4. Clarify Purchase
 
-- Extract medicine details using vision AI
-- Calculate required quantities
-- Check database availability
-- Clarify Purchase
+---
 
+Pipeline Process
