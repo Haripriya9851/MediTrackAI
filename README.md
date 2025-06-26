@@ -1,13 +1,13 @@
 # PharmAssist
 
 ## Features
-**Vision Processing:** Uses Gemini 1.5 Flash to extract prescription data from images
+**Better Prescription Understanding:** Accurate transcript reading,for dosage, quantity, days extraction with Gemini LLM
 
-**Agent-based Processing:** LangChain agents with tool calling for database operations
+**High Reasoning:** Used Chain-of-Thought prompt engineering technique to clean, organize and extract data in structured JSON format.
 
-**Database Integration:** SQLite database for pharmacy inventory management
+**Prescription style variability:** Handled via repeated testing and fine-tuning prompts.
 
-**Real-time Stock Checking:** Automatic inventory verification and updates
+**Dynamic SQL Query Generation :** Used Langchain Tool calling to communicate and update SQLLite DB
 
 ## Setup
 
