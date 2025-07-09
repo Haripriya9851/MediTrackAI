@@ -8,7 +8,7 @@ short_description: Gemini Pharmacy Assistant with Gemini Vision + LangGraph
 A Gradio application that uses Gemini Vision and LangGraph agents to extract and process handwritten prescriptions.
 
 
-Pipeline Process:
+# Pipeline Process:
 
 ![image](https://github.com/user-attachments/assets/9e144fdd-cbed-48f6-945b-bb4ce8e0bb7e)
 
